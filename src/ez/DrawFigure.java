@@ -39,8 +39,9 @@ public class DrawFigure {
 		EZ.addText(300,50, "012あいう漢字", Color.BLACK, 24);
 
 		// 円を描く．(中心座標x, y, 幅，高さ，色，塗りつぶし)
-		EZ.addCircle(100, 100, 150, 150, Color.BLUE, true);
+		EZCircle circle =EZ.addCircle(100, 100, 150, 150, Color.BLUE, true);
 		EZ.addCircle(200, 200, 200, 200, Color.RED,  false);
+		circle.setColor(Color.RED);
 		
 		int[] nxp = {200,205,195,200};
 		int[] nyp = {100,200,200,100};
